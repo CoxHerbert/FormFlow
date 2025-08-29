@@ -1,0 +1,13 @@
+{
+  "name": "formflow",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "docs:dev": "pnpm --filter @formflow/docs dev"
+  }
+}

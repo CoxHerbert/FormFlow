@@ -4,3 +4,4 @@
 - 移动端渲染器基于 Vant
 - 支持模块化导入
 - 支持导出 Schema 到多端
+- 使用 npm workspaces + Turbo 进行构建

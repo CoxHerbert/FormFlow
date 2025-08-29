@@ -1,13 +1,22 @@
 {
   "name": "formflow",
   "private": true,
-  "packageManager": "pnpm@9",
+  "packageManager": "npm@11.4.2",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "turbo run dev --parallel",
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "docs:dev": "pnpm --filter @formflow/docs dev"
+    "docs:dev": "npm run dev --workspace=@formflow/docs"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0",
+    "typescript": "^5.5.4",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.2"
   }
 }
